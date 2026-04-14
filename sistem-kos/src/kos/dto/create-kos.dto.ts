@@ -3,18 +3,18 @@ import { IsString, IsInt } from "class-validator";
 export class CreateKosDto {
 
   @IsString()
-  name: string;
+  name: string | undefined;
 
   @IsString()
-  address: string;
+  address: string | undefined;
 
   @IsString()
-  gender: string;
+  gender: string | undefined;
 
   @IsInt()
-  price: number;
+  price: number | undefined;
 
   @IsInt()
-  ownerId: number;
+  ownerId: number | undefined;
 
 }

@@ -3,12 +3,12 @@ import { IsString, IsInt } from "class-validator";
 export class CreateRoomDto {
 
   @IsString()
-  number: string;
+  number: string | undefined;
 
   @IsString()
-  status: string; // contoh: AVAILABLE / BOOKED
+  status: string | undefined; // contoh: AVAILABLE / BOOKED
 
   @IsInt()
-  kosId: number;
+  kosId: number | undefined;
 
 }
